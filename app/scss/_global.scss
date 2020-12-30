@@ -29,4 +29,17 @@ p {
 body {
     overflow-x: hidden;
     background-color: white;
+    font-family: 'IntroRust', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex{
+    display: flex;
 }

@@ -1,0 +1,35 @@
+.header {
+    box-shadow: -0.3px 1px 6px rgba(0, 0, 0, 0.15);
+
+    &__inner {
+        justify-content: space-between;
+        align-items: center;
+        min-height: 120px;
+    }
+
+    &__menu {
+        max-width: 390px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    &__list {
+        justify-content: space-between;        
+    }
+
+    &__item {
+        display: inline-block;
+
+        &+& {
+            margin-left: 10px;
+        }
+    }
+
+    &__link {
+        transition-property: color;
+        transition-duration: 0.2s;
+        &:hover {
+            color: $hover-red;
+        }
+    }
+}
