@@ -1,5 +1,10 @@
 @import 'fonts';
 @import 'vars';
+@import 'mixins';
 @import 'global';
 
+@import 'page-index/contacts';
+
 @import 'page-index/header';
+@import 'page-index/franchise';
+@import 'page-index/restaurant';

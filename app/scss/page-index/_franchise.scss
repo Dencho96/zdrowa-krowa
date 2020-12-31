@@ -1,0 +1,72 @@
+.franchise {
+    padding: 60px 0;
+
+    &__inner {
+        justify-content: space-between;
+    }
+
+    &__col, &__contacts-col {
+        max-width: 360px;
+        width: 100%;
+    }
+
+    &__wrapper {
+        position: relative;
+        border-radius: 20px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - 36px);
+            height: calc(100% - 46px);
+            border: 3px solid white;
+            border-radius: 20px 0;
+        }
+    }
+
+    &__photo {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__info {
+        position: absolute;
+        bottom: 10%;
+        left: 10%;
+        max-width: 280px;
+        width: 100%;
+    }
+
+    &__photo-title,
+    &__text {
+        text-shadow: -0.6px 1.9px 5px rgba(0, 0, 0, 0.63);
+        color: white;
+    }
+
+    &__photo-title {
+        margin-bottom: 14px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: "Open Sans";
+        font-size: 15px;
+        line-height: 22px;
+        font-weight: 300;
+    }
+
+    &__contacts{
+        justify-content: space-between;
+        max-width: 750px;
+        width: 100%;
+    }
+
+    &__contacts-title, &__contacts-text{
+        max-width: 320px;
+        width: 100%;
+    }
+}

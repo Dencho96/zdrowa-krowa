@@ -1,0 +1,115 @@
+.contacts {
+    justify-content: space-between;
+    max-width: 990px;
+    width: 100%;
+
+    &__title,
+    &__list {
+        color: #231f20;
+    }
+
+    &__title,
+    &__btn {
+        text-transform: uppercase;
+    }
+
+    &__title {
+        margin-bottom: 37px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    &__text,
+    &__input,
+    &__textarea {
+        font-family: "Open Sans";
+        font-weight: 300;
+    }
+
+    &__text {
+        margin-bottom: 30px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    &__item {
+        &+& {
+            margin-top: 37px;
+        }
+    }
+
+    &__link,
+    &__btn {
+        font-size: 18px;
+    }
+
+    &__link {
+        position: relative;
+        padding-left: 61px;
+        font-family: OpenSans;
+        font-weight: 600;
+        transition: color 0.2s;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: -5px;
+            width: 40px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        &--phone {
+            &::before {
+                height: 40px;
+                background-image: url('../../images/icons/icon-phone.png');
+            }
+        }
+
+        &--email {
+            &::before {
+                height: 28px;
+                background-image: url('../../images/icons/icon-email.png');
+            }
+        }
+
+        &:hover{
+            color: $hover-red;
+        }
+    }
+
+    &__label {
+        display: block;
+
+        &+& {
+            margin-top: 20px;
+        }
+
+        &:nth-last-child(n) {
+            margin-bottom: 18px;
+        }
+    }
+
+    &__input,
+    &__textarea {
+        display: block;
+        padding: 14px 18px 12px;
+        line-height: 1;
+        width: 100%;
+        border: 2px solid black !important;
+    }
+
+    &__textarea {
+        resize: none;
+    }
+
+    &__btn {
+        &::before{
+            width: 49px;
+            height: 29px;
+            background-image: url('../images/icons/icon-cow.png');
+        }
+    }
+}
