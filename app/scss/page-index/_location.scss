@@ -1,0 +1,77 @@
+.location {
+    padding: 90px 0 40px;
+
+    &__title {
+        margin-bottom: 38px;
+        max-width: 555px;
+        width: 100%;
+        color: #231f20;
+        font-size: 45px;
+    }
+
+    &__slider {
+        max-width: 1920px;
+        margin: 0 auto 60px;
+    }
+
+    &__inner {}
+
+    &__map {
+        margin-right: 80px;
+        width: 398px;
+        height: 376px;
+        background-image: url('../images/location-map.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__list {
+        flex-wrap: wrap;
+        max-width: 670px;
+        width: 100%;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 40px;
+        padding-left: 69px;
+        max-width: 305px;
+        width: 100%;
+        @include opensans400;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 51px;
+            height: 39px;
+            background-image: url('../images/location-icon.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    &__place {
+        margin-bottom: 5px;
+    }
+
+    &__phone {
+        transition: opacity 0.2s;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__status {
+        display: block;
+        font-weight: 300;
+        font-size: 15px;
+        opacity: 0.6;
+        color: #231f20;
+    }
+
+}

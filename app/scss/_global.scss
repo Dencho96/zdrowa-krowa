@@ -94,8 +94,13 @@ body {
     margin-bottom: 22px;
     padding: 14px 22px 14px 28px;
     box-shadow: -0.6px 1.9px 5px rgba(0, 0, 0, 0.63);
-    background-color: #d52228;
+    background-color: $text-red;
     color: white;
     font-size: 35px;
     line-height: 18px;
+}
+
+.text-red{
+    color: $text-red;
+    font-weight: 600;
 }
