@@ -1,0 +1,41 @@
+.videos {
+    padding: 25px 0;
+
+    &__title {
+        margin-bottom: 45px;
+        text-align: center;
+        color: #231f20;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    
+    &__inner{
+        justify-content: space-between;
+    }
+
+
+    &__item{
+        max-width: 360px;
+        width: 100%;
+        color: #231f20;
+    }
+
+    &__player{
+        margin-bottom: 30px;
+        width: 100%;
+        height: 239px;
+    }
+
+    &__name{
+        margin-bottom: 23px;
+        @include opensans600;
+        font-size: 20px;
+    }
+
+    &__text{
+        @include opensans300;
+        font-size: 17px;
+        line-height: 26px;
+        opacity: 0.6;
+    }
+}
