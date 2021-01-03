@@ -1,0 +1,75 @@
+.payment {
+    padding: 65px 0 35px;
+    color: #231f20;
+
+    &__box,
+    &__inner,
+    &__item {
+        justify-content: space-between;
+    }
+
+    &__box {
+        align-items: center;
+        margin-bottom: 55px;
+    }
+
+
+    &__title {
+        margin-bottom: 35px;
+        font-size: 45px;
+    }
+
+    &__text {
+        @include opensans600;
+        font-size: 18px;
+    }
+
+    &__btn {
+        margin: 0;
+
+        &::before {
+            left: 25px;
+            top: 47%;
+            width: 31px;
+            height: 41px;
+            background-image: url('../images/icons/icon-pdf.png');
+        }
+    }
+
+    &__inner {
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-bottom: 35px;
+        max-width: 555px;
+        width: 100%;
+    }
+
+    &__icon {
+        width: 73px;
+        height: 77px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    &__name,
+    &__info {
+        max-width: 437px;
+        width: 100%;
+    }
+
+    &__name {
+        margin-bottom: 15px;
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    &__info {
+        @include opensans300;
+        font-size: 15px;
+        line-height: 24px;
+        opacity: 0.6;
+    }
+}
