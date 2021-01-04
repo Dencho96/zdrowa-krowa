@@ -1,7 +1,14 @@
 .contacts {
     justify-content: space-between;
+    margin: 0 auto;
+    padding-bottom: 60px;
     max-width: 990px;
     width: 100%;
+
+    &__info{
+        max-width: 446px;
+        width: 100%;
+    }
 
     &__title,
     &__list {
@@ -78,6 +85,11 @@
         &:hover{
             color: $hover-red;
         }
+    }
+
+    &__form{
+        max-width: 458px;
+        width: 100%;
     }
 
     &__label {

@@ -1,0 +1,60 @@
+.steps {
+    padding: 25px 0 35px;
+
+    &__title {
+        margin-bottom: 45px;
+        max-width: 458px;
+        width: 100%;
+        color: #231f20;
+        font-size: 45px;
+    }
+
+    &__inner {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 28px;
+        padding: 83px 40px 72px;
+        max-width: 360px;
+        width: 100%;
+        background-color: $hover-red;
+        text-align: center;
+        color: white;
+        &::before{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: calc(100% - 54px);
+            height: calc(100% - 54px);
+            border: 5px solid white;
+        }
+        &--noicon{
+            padding-top: 130px;
+        }
+    }
+
+    &__icon {
+        margin: 0 auto 40px;
+        width: 161px;
+        height: 141px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__name {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    &__info {
+        @include opensans300;
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
