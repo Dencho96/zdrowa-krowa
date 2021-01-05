@@ -1,6 +1,21 @@
 .location {
     padding: 90px 0 40px;
 
+    &__container {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            width: 59px;
+            height: 18px;
+            background-image: url('../images/icons/location-chevrons.png');
+        }
+    }
+
     &__title {
         margin-bottom: 38px;
         max-width: 555px;
@@ -13,8 +28,6 @@
         max-width: 1920px;
         margin: 0 auto 60px;
     }
-
-    &__inner {}
 
     &__map {
         margin-right: 80px;

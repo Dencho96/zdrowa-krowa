@@ -1,5 +1,8 @@
 .franchise {
     padding: 60px 0 0;
+    background-image: url('../images/franchise-bg.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
 
     &__inner {
         justify-content: space-between;

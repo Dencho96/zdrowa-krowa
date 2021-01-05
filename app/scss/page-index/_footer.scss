@@ -13,7 +13,7 @@
         justify-content: space-between;
         margin-bottom: 70px;
         @include opensans400;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     &__col {
@@ -28,7 +28,7 @@
     &__title {
         margin-bottom: 45px;
         @include mont700;
-        font-size: 28px;
+        font-size: 22px;
         text-transform: uppercase;
     }
 
